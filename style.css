@@ -1,0 +1,110 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(210, 210, 210);
+	padding-left: 1em;
+	/* font-size: 25px; */
+	/* color: rgb(250, 245, 245); */
+}
+
+.group {
+	/* 	border: 1px solid black; */
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	margin: 5px;
+}
+
+.group .outer {
+	background-color: #EFE9DC;
+	width: 220px;
+	height: 160px;
+	border: 1px solid black;
+	/* 	Lägg till kod här */
+	/* margin: 1em; */
+	padding: 1em;
+}
+
+.group .inner {
+	background-color: #E6BF67;
+	text-align: center;
+	height: 100%;
+	/* 	Lägg till kod här */
+	/* padding: 0em; */
+	/* margin: 1em; */
+}
+
+.fig1 {
+	width: 5em;
+	height: 5em;
+	background-color: rgb(73, 210, 73);
+	border: 5px solid rgb(25, 124, 25);
+}
+
+.fig2 {
+	background-color: rgb(156, 156, 156);
+	height: 1em;
+	margin: 0.25em;
+
+	&.box1 { width: 4em; }
+	&.box2 { width: 6em; }
+	&.box3 { width: 5em; }
+}
+/* .fig2 .box1 */
+
+
+.fig3 {
+	background-color: rgb(241, 241, 210);
+	border: 3px solid rgb(154, 39, 39);
+	height: 3rem;
+	width: 7em;
+	border-top-right-radius: 2em;
+	/* border-radius: 0 2em 0 0; */
+}
+
+.fig4 {
+	width: 6em;
+	height: 6em;
+	background-color: rgb(255, 255, 220);
+	border: 1.5em solid black;
+	border-left-color: #E6BF67;
+	border-top-color: rgb(74, 236, 236);
+	border-right-color: #bf3edc;
+	border-bottom-color: rgb(38, 38, 144);
+}
+
+.size {
+	width: 10em;
+	height: 3em;
+	background-color: rgb(225, 190, 196);
+	border: 1em solid red;
+	margin: 0.2em;
+}
+.size1 {
+	/* width är breddet på innehållet */
+	/* hela width blir: 1em+10em+1em */
+	box-sizing: content-box;
+}
+.size2 {
+	/* width är bredden på innehållet inklusive padding och border: hela bredden */
+	box-sizing: border-box;
+}
+
+
+.size:hover {
+	border-color: rgb(182, 182, 52);
+	background-color: rgb(237, 237, 173);
+}
+
+.outer:first-child {
+	border-style: dashed;
+}
+.outer:nth-child(3) {
+	border: 5px solid red;
+}
+.outer:nth-child(odd) {
+	background-color: rgb(86, 233, 86);
+}
